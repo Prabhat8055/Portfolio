@@ -1,4 +1,4 @@
-import Mesh from "./components/landingPage/mesh";
+import Mesh from "./components/landingPage/Mesh";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Project from "./components/ThirdPage/Project";
