@@ -1,0 +1,62 @@
+/* src/Terminal.css */
+
+.terminal {
+  background-color: #2b2b2b;
+  /* background-color: #4a4a4aad; */
+  color: #00ff00;
+  padding: 20px;
+  font-family: monospace;
+  border-radius: 8px;
+  margin: auto;
+  height: 277px ;
+  overflow-y: auto;
+  border-radius: 30px;
+}
+.terminal::-webkit-scrollbar {
+  display: none;
+}
+
+.terminal-output {
+  white-space: pre-wrap;
+}
+
+.terminal-line {
+  opacity: 1;
+}
+
+.typing {
+  opacity: 0;
+}
+
+.terminal-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.terminal-input {
+  background-color: transparent;
+  color: #00ff00;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: monospace;
+}
+
+.caret-bar span {
+  margin-left: 4px;
+  animation: blink 1s infinite;
+  color: #00ff00;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

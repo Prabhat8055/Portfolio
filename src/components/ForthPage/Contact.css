@@ -1,0 +1,85 @@
+/* Container for Form and Heading */
+.form-container {
+  max-width: 50vw;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #121212;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #f1f1f1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
+.main h1 {
+  color: #f48fb1;
+  font-size: 3.6em;
+  font-weight: 700;
+  text-shadow: -0.0075em 0.0075em 0 #f8bbd0,
+  0.005em 0.005em 0 #f06292,
+    0.01em 0.01em 0 #ec407a, 0.015em 0.015em 0 #e91e63, 0.02em 0.02em 0 #d81b60,
+    0.025em 0.025em 0 #c2185b, 0.03em 0.03em 0 #ad1457,
+    0.035em 0.035em 0 #880e4f;
+    padding: 10px;
+}
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  /* display: block; */
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #bbb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  /* width: 100%; */
+  padding: 14px;
+  margin-bottom: 20px;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #00d4ff;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Textarea */
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(45deg, #00d4ff, #0066ff);
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: linear-gradient(45deg, #0066ff, #00d4ff);
+}

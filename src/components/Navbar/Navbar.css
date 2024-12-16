@@ -1,0 +1,125 @@
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 8.9vh;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  width: 95vw;
+  z-index: 1000;
+  /* padding-right: 60px; */
+  /* overflow: hidden; */
+}
+
+/* Menu Container */
+.menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* Toggle Button */
+.menu-toggle {
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Hidden Menu Items */
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: absolute;
+  left: -200px; /* Hidden off-screen */
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-items a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Active Menu State */
+.menu-container.active .menu-items {
+  transform: translateX(-12vw); /* Slide into view */
+  opacity: 1;
+}
+
+/* logo  */
+/* Logo Styling */
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  padding-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #f3f3f3; /* Neutral light color */
+}
+
+.logo a:hover {
+  color: #ff66c4; /* Bright accent color for hover effect */
+  scale: 1.02;
+  transition: 0.2s ease;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 20px; /* Adjust logo size for smaller screens */
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-items {
+    display: none; /* Hidden by default for smaller screens */
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    /* top: 60px; */
+    right: 0;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-container.active .menu-items {
+    display: flex; /* Show menu when active */
+    left: 0px;
+    top: 10vh;
+  }
+}

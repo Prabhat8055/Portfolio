@@ -1,0 +1,133 @@
+/* AboutMe.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Teko:wght@300..700&display=swap");
+.about-section {
+  background-color: #000;
+  color: #f5f5f5;
+  margin: 40px auto;
+  max-width: 900px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9vh;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.about-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+
+.about-content h2 {
+  font-size: 1.3em;
+  color: #ff66c4;
+  margin-bottom: 1em;
+}
+
+.about-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.skills {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Skill bar styles */
+.skill-bar {
+  margin-bottom: 0.8em;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.progress-bar {
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 6px;
+  margin-top: 4px;
+}
+
+.progress {
+  background-color: white;
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+@media (max-width: 768px) {
+
+  .about-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    padding: 10px;
+    display: flex;
+    text-align: justify;
+  }
+  .about-content {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .skills {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+    padding: 10px;
+    display: flex;
+    text-align: justify;
+  }
+
+  .skill-info {
+    font-size: 0.9rem;
+  }
+
+  .progress {
+    height: 8px;
+  }
+}

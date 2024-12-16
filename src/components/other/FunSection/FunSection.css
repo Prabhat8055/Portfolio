@@ -1,0 +1,13 @@
+.fun-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b2b2b;
+    border-radius: 25px;
+    padding: 2em;
+  }
+  
+  canvas {
+    border-radius: 25px;
+  }
+  
